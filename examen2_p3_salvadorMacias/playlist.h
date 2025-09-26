@@ -1,10 +1,24 @@
 #pragma once
 
+#include <string>
 #include <iostream>
-#include <vector>
 
 #include "song.h"
 
-vector <song*> songs;
+using namespace std;
 
-//operator+(song*);
+class playlist{
+    string nombre;
+    vector <song*> songs;
+    
+public:
+    playlist(string nombre);
+    
+    
+    //operator+(song*);
+    
+    string getNombre() const;
+    void setNombre(string nombre);
+
+    
+};
