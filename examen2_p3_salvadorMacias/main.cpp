@@ -1,14 +1,15 @@
-//
-//  main.cpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
-
 #include <iostream>
 
+using namespace std;
+
+void menu(){
+    int opc_menu;
+    cout<<"ejercicios"<<endl<<"1. spotify++"<<endl<<"2. salir"<<endl;
+    do {
+        
+    } while (opc_menu!=2);
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    menu();
 }
