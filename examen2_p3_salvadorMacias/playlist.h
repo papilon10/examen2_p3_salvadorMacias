@@ -1,13 +1,10 @@
-//
-//  playlist.hpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
+#pragma once
 
-#ifndef playlist_hpp
-#define playlist_hpp
+#include <iostream>
+#include <vector>
 
-#include <stdio.h>
+#include "song.h"
 
-#endif /* playlist_hpp */
+vector <song*> songs;
+
+//operator+(song*);

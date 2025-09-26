@@ -1,13 +1,17 @@
-//
-//  salsa.hpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
+#pragma once
 
-#ifndef salsa_hpp
-#define salsa_hpp
+#include "song.h"
 
-#include <stdio.h>
-
-#endif /* salsa_hpp */
+class salsa: public song{
+private:
+    string genero;
+    
+public:
+    salsa(int codigo,string nombre,string artista, int duracion, string
+            genero);
+    void mostrarDescripcion()override;
+    
+    string getGenero() const;
+    void setGenero(string genero);
+    
+};

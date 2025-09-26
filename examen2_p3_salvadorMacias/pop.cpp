@@ -1,8 +1,14 @@
-//
-//  pop.cpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
+#include "pop.h"
 
-#include "pop.hpp"
+pop::pop(int codigo, string nombre,string artista, int duracion,string genero)
+:song( codigo,  nombre,  artista,  duracion){
+    this->genero=genero;
+}
+
+void pop::mostrarDescripcion(){
+    cout<<"nombre de la cancion: "<<song::getNombre()<<endl;
+    cout<<"artista de la cancion: "<<song::getArtista()<<endl;
+    cout<<"duracion de la cancion: "<<song::getDuracion()<<endl;
+    cout<<"codigo de la cancion: "<<song::getCodigo()<<endl;
+
+}

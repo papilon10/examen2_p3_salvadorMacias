@@ -1,13 +1,17 @@
-//
-//  pop.hpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
+#pragma once
 
-#ifndef pop_hpp
-#define pop_hpp
+#include "song.h"
 
-#include <stdio.h>
-
-#endif /* pop_hpp */
+class pop: public song{
+private:
+    string genero;
+    
+public:
+    pop(int codigo,string nombre,string artista, int duracion, string
+            genero);
+    void mostrarDescripcion()override;
+    
+    string getGenero() const;
+    void setGenero(string genero);
+    
+};

@@ -1,13 +1,17 @@
-//
-//  bachata.hpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
+#pragma once
 
-#ifndef bachata_hpp
-#define bachata_hpp
+#include "song.h"
 
-#include <stdio.h>
-
-#endif /* bachata_hpp */
+class bachata: public song{
+private:
+    string genero;
+    
+public:
+    bachata(int codigo,string nombre,string artista, int duracion, string
+            genero);
+    void mostrarDescripcion()override;
+    
+    string getGenero() const;
+    void setGenero(string genero);
+    
+};

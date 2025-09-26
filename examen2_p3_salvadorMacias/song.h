@@ -1,13 +1,31 @@
-//
-//  song.hpp
-//  examen2_p3_salvadorMacias
-//
-//  Created by salvador macias on 26/09/2025.
-//
+#pragma once
 
-#ifndef song_hpp
-#define song_hpp
+#include <string>
+#include <iostream>
 
-#include <stdio.h>
 
-#endif /* song_hpp */
+using namespace std;
+
+class song{
+    int codigo;
+    string nombre;
+    string artista;
+    int duracion;
+    
+public:
+    song(int codigo,string nombre,string artista, int duracion);
+    
+    virtual ~song();
+    virtual void mostrarDescripcion() = 0;
+
+    
+    int getCodigo() const;
+    string getNombre() const;
+    string getArtista() const;
+    int getDuracion() const;
+    
+    void setNombre(string nombre);
+    void setArtista(string artista);
+    void setCodigo(int codigo);
+    void setDuracion(int duracion);
+};
